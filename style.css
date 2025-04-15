@@ -155,6 +155,17 @@ width: 9px;
         transform: rotate(360deg);
     }
   }
+  #showItem1{
+    position:relative;
+    left: -100%;
+    transition: 0.4s ease all;
+    } 
+    #showItem2{
+    position:relative;
+    right: -100%;
+    transition: 0.4s ease all;
+    }
+    
   header .rightImage img:hover{
     animation-play-state: paused;
   }
@@ -403,9 +414,11 @@ footer{
 }
 .link h4 a{
   color: var(--Antique-white);
+  transition: 0.4s ease all;
 }
 .link h4 a:hover{
- border-bottom: 2px solid var(--Antique-white);
+ text-decoration: underline;
+ color: #A53860;
 }
 .leftFooter p{
   color: var(--English-violet);
@@ -534,7 +547,9 @@ footer{
     margin-right:30px;
   }
 
-  
+  header{
+ overflow: hidden;
+  }
   header .title{
     float: none;
     width:80%;
@@ -567,14 +582,20 @@ footer{
    }
    header .rightImage{
     display: none;
+    position: absolute;
+    top: -150px;
+    right:-25%;
+    float: right;
+    width: 50%;
+    opacity: 0.8;
+     
    }
-
    main{
     height: auto;
    }
   .boxCards{
 width: 100%;
- 
+ text-align: center;
   }
   .card{
 width: 45%;
